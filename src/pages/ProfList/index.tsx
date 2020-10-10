@@ -5,8 +5,8 @@ import style from './style';
 
 function ProfList(){
     return (
-        <View>
-            
+        <View style={style.container}>
+
         </View>
     )
 };

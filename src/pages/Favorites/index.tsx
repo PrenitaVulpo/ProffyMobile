@@ -3,12 +3,12 @@ import { View } from 'react-native';
 
 import style from './style';
 
-function ProfList(){
+function Favorites(){
     return (
-        <View>
+        <View style={style.container}>
             
         </View>
     )
 };
 
-export default ProfList;
+export default Favorites;
