@@ -8,6 +8,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 
 import style from './style';
 import api from '../../services/api';
+import { useFocusEffect } from '@react-navigation/native';
 
 function ProfList(){
     const [favorites,setFavorites] = useState<number[]>([]);
@@ -31,6 +32,10 @@ function ProfList(){
     const [subject,setSubject] = useState('');
     const [week_day,setWeek_day] = useState('');
     const [time,setTime] = useState('');
+
+    useFocusEffect(() => {
+        loadFavorites();
+    })
 
     async function filtersSubmit(){
         loadFavorites();
