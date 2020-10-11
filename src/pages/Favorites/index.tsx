@@ -4,7 +4,7 @@ import {useFocusEffect} from '@react-navigation/native'
 import { View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import PageHeader from '../../components/PageHeader';
-import ProfItem from '../../components/ProfItem';
+import ProfItem, { Prof } from '../../components/ProfItem';
 
 import style from './style';
 
