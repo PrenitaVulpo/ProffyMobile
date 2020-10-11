@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-community/async-storage';
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import {useFocusEffect} from '@react-navigation/native'
 import { View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -21,7 +21,7 @@ function Favorites(){
     }
     useFocusEffect(() => {
         loadFavorites();
-    });
+    })
     return (
         <View style={style.container}>
             <PageHeader tittle='Proffys disponíveis'/>
