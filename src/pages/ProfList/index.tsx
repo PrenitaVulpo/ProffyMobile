@@ -14,8 +14,8 @@ function ProfList(){
     function loadFavorites(){
         AsyncStorage.getItem('favorites').then(response =>{
             if (response) {
-                const favitedProfs = JSON.parse(response);
-                const favoritedIDs = favitedProfs.map((prof: Prof) =>{
+                const favoritedProfs = JSON.parse(response);
+                const favoritedIDs = favoritedProfs.map((prof: Prof) =>{
                     return prof.id;
                 })
                 setFavorites(favoritedIDs)
